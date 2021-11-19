@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    color: #3a7bfd;
+}
+
+:root {
+    --border: linear-gradient(135deg, #57ddff, #c058f3);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 25rem;
+    background-image: url("/res/img/light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__title {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-switch {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.inputField {
+    display: flex;
+    width: 45%;
+    height: 5rem;
+    background: #fff;
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+}
+
+.form__input--uncheck {
+    margin: 1.5rem;
+    border: 1px solid #e4e5f1;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.form__input--check {
+    margin: 1.5rem;
+    border: 1px solid #e4e5f1;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-image: url(/res/img/icon-check.a8fb15d0.svg), linear-gradient(135deg, #57ddff, #c058f3);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.form__input--create {
+    width: 80%;
+    font-size: 1.4rem;
+    border-style: none;
+    font-weight: bold;
+    color: #777a92;
+    outline: none;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.fil {
+    margin-left: 4rem;
+}
+
+.filter__option {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #777a92;
+}
+
+.filter span {
+    font-size: 1.2rem;
+}
+
+.filter__option:last-child {
+    padding-left: 3rem;
+}
+
+.filter__option:hover {
+    color: #001b37;
+}
+
+.filp {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.subFooter {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #777a92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 5rem;
+}
+
+.main {
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.todoList {
+    width: 45%;
+    border: 0 solid gray;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 0 gray;
+    background: #ffffff;
+}
+
+.list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+    height: 4.5rem;
+    border-bottom: 1px solid #cacde8;
+}
+
+.text {
+    font-size: 1.3rem;
+    margin: 1.3rem;
+    color: #777a92;
+    font-weight: 700;
+}
+
+.item:hover {
+    cursor: grab;
+}
+
+.list__item--delete {
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 70%;
+}
+
+.list__item--unchecked {
+    display: inline-block;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background: transparent;
+    border: 1px solid #e4e5f1;
+    margin: 1rem 1rem;
+}
+
+.list__item--checked {
+    display: inline-block;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #cacde8;
+    margin: 1rem 1rem;
+    background-image: url("/res/img/icon-check.a8fb15d0.svg"), linear-gradient(135deg, #57ddff, #c058f3);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.list__item--unchecked:hover {
+
+    border-color: #57ddff #c058f3 #57ddff #c058f3;
+    cursor: grab;
+}
+
+
+.mainFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    box-shadow: 0 0 10px 0 gray;
+    /*background: #fff;*/
+    bottom: 0;
+    font-size: 1.2rem;
+    background: white;
+}
+
+
+.mainFooter p {
+    color: #777a92;
+}
+
+.darkMood {
+    background: #161722;
+}
+
+.dark-header {
+    background-image: url("/res/img/dark.jpg");
+}
+
+.dark-main {
+    background: #393a4c;
+}

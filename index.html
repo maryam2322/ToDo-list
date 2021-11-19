@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="res/img/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="res/css/styles.css">
+</head>
+
+<body>
+<div class="container">
+
+    <!--header-->
+    <div class="header">
+        <div class="header__title">
+            <h1>TODO</h1>
+            <button class="btn-switch" onclick="changeMood(this)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <path fill="#FFF" fill-rule="evenodd"
+                          d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"></path>
+                </svg>
+            </button>
+        </div>
+        <form class="form">
+            <div class="inputField">
+                <button type="submit" class="form__input--uncheck"></button>
+                <input type="text" class="form__input--create" placeholder="Create a new todo...">
+            </div>
+        </form>
+    </div>
+
+    <div class="main">
+        <div class="todoList">
+            <ul class="list">
+
+            </ul>
+            <div class="filter">
+                <span><span class="pendingNumb"></span> item left</span>
+                <div class="fil">
+                    <button class="filter__option ">All</button>
+                    <button class="filter__option ">Active</button>
+                    <button class="filter__option ">Completed</button>
+                    <button class="filter__option filp">Clear Completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="subFooter">
+        <p>Drag and drop to reorder list</p>
+    </div>
+    <div class="mainFooter">
+        <p>Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+            with lots of <span class="iconify" data-icon="ion:heart-sharp" style="color: red;"></span> by
+            <a href="https://www.frontendmentor.io/profile/mileine">Mi Souto</a>.
+        </p>
+    </div>
+</div>
+
+<script src="src/scripts.js"></script>
+</body>
+</html>
