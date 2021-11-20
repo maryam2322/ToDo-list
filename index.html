@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <!--Drag and Drop-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
+            integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.js"
+            integrity="sha512-Fc8SDJVBwajCGX0A9z8lBeRPaCjR25Ek577z9PtQLB7CLBz7Mw1XhjbcD2yDWrGszL/uezKGidtGCng6Fhz3+A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Todo App</title>
     <link rel="stylesheet" href="res/css/styles.css">
 </head>
@@ -44,9 +51,9 @@
             <div class="filter">
                 <span><span class="pendingNumb"></span> item left</span>
                 <div class="fil">
-                    <button class="filter__option ">All</button>
-                    <button class="filter__option ">Active</button>
-                    <button class="filter__option ">Completed</button>
+                    <button class="filter__option" onchange="onChange(this)">All</button>
+                    <button class="filter__option" onchange="onChange(this)">Active</button>
+                    <button class="filter__option" onchange="onChange(this)">Completed</button>
                     <button class="filter__option filp">Clear Completed</button>
                 </div>
             </div>
@@ -64,7 +71,8 @@
         </p>
     </div>
 </div>
-
+<script src="src/Sortable.js"></script>
+<script src="src/Sortable.min.js"></script>
 <script src="src/scripts.js"></script>
 </body>
 </html>

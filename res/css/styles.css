@@ -11,9 +11,11 @@ a {
     color: #3a7bfd;
 }
 
+
 :root {
     --border: linear-gradient(135deg, #57ddff, #c058f3);
 }
+
 
 .container {
     display: flex;
@@ -171,6 +173,7 @@ a {
     margin: 1.3rem;
     color: #777a92;
     font-weight: 700;
+    width: 40rem;
 }
 
 .item:hover {
@@ -184,7 +187,7 @@ a {
     width: 2rem;
     height: 2rem;
     margin-top: 1rem;
-    margin-left: 70%;
+    /*margin-left: 70%;*/
 }
 
 .list__item--unchecked {
@@ -226,7 +229,7 @@ a {
     box-shadow: 0 0 10px 0 gray;
     /*background: #fff;*/
     bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background: white;
 }
 
