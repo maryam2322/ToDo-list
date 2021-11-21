@@ -37,7 +37,7 @@ a {
 .header {
     width: 100%;
     height: 25rem;
-    background-image: url("/res/img/light.jpg");
+    background-image: url('/res/img/light.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

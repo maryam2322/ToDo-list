@@ -1,12 +1,17 @@
 // change mode in ToDoList
 const icon = document.getElementById("icon")
-const header = document.getElementsByClassName("header")
+const header = document.getElementById("header-img")
 icon.onclick = function (){
     document.body.classList.toggle("dark-theme")
     if (document.body.classList.contains("dark-theme")){
         icon.src = "/res/img/icon-sun.svg"
     }else {
         icon.src = "/res/img/icon-moon.svg"
+    }
+    if (document.body.classList.contains("dark-theme")){
+        header.style.backgroundImage = "url('/res/img/dark.jpg')"
+    }else {
+        header.style.backgroundImage = "url('/res/img/light.jpg')"
     }
 }
 
