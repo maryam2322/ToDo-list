@@ -260,7 +260,7 @@ a {
     background-position: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .header {
         height: 18rem;
     }
@@ -284,33 +284,41 @@ a {
         margin: 1.2rem;
 
     }
+
     .form__input--create {
         font-size: 1.1rem;
     }
-    .filter__option{
+
+    .filter__option {
         font-size: 0.8rem;
     }
+
     .filter span {
         font-size: 0.8rem;
     }
+
     .filter__option:last-child {
         padding-left: 0;
     }
-    .fil{
+
+    .fil {
         margin-left: 2rem;
     }
-    .todoList{
+
+    .todoList {
         width: 60%;
     }
-    .text{
+
+    .text {
         font-size: 1rem;
-        width: 18rem;
+        width: 65%;
     }
 
-    .subFooter{
+    .subFooter {
         font-size: 1rem;
     }
-    .mainFooter{
+
+    .mainFooter {
         font-size: 0.8rem;
         height: 2rem;
     }
@@ -339,30 +347,37 @@ a {
     .form__input--create {
         width: 60%;
     }
-    .filter__option{
+
+    .filter__option {
         font-size: 0.6rem;
     }
+
     .filter span {
         font-size: 0.6rem;
     }
+
     .filter__option:last-child {
         padding-left: 0;
     }
-    .fil{
+
+    .fil {
         margin-left: 0.6rem;
     }
-    .todoList{
+
+    .todoList {
         width: 90%;
     }
-    .text{
+
+    .text {
         font-size: 0.8rem;
         width: 50%;
     }
 
-    .subFooter{
+    .subFooter {
         font-size: 0.9rem;
     }
-    .mainFooter{
+
+    .mainFooter {
         font-size: 0.6rem;
         height: 2rem;
     }

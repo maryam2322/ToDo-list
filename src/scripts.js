@@ -73,7 +73,7 @@ function deleteItem(index) {
 
 // checked and unchecked
 const check = document.getElementById("check")
-check.addEventListener('click', () =>{
+check.addEventListener('click', () => {
     check.classList.add('check')
 })
 
