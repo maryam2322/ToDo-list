@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: var(--primary-color);
 }
 
 * {
@@ -13,7 +14,17 @@ a {
 
 
 :root {
-    --border: linear-gradient(135deg, #57ddff, #c058f3);
+    --primary-color: #fff;
+    --secondary-color: #777a92;
+    --backgroun-list: #fff;
+    --filter-color: #777a92;
+}
+
+.dark-theme {
+    --primary-color: #161722;
+    --secondary-color: #cacde8;
+    --backgroun-list: #393a4c;
+    --filter-color: #4d5066;
 }
 
 
@@ -55,8 +66,8 @@ a {
     display: flex;
     width: 45%;
     height: 5rem;
-    background: #fff;
-    border: 0.2rem solid #fff;
+    background: var(--backgroun-list);
+    border: 0.2rem solid var(--backgroun-list);
     border-radius: 1rem;
 }
 
@@ -66,7 +77,7 @@ a {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background: #fff;
+    background: var(--backgroun-list);
 }
 
 .form__input--check {
@@ -85,8 +96,9 @@ a {
     font-size: 1.4rem;
     border-style: none;
     font-weight: bold;
-    color: #777a92;
+    color: var(--secondary-color);
     outline: none;
+    background: var(--backgroun-list);
 }
 
 .filter {
@@ -94,6 +106,7 @@ a {
     justify-content: space-evenly;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    color: var(--filter-color);
 
 }
 
@@ -107,7 +120,7 @@ a {
     border: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #777a92;
+    color: var(--filter-color);
 }
 
 .filter span {
@@ -142,6 +155,7 @@ a {
     padding: 0;
     display: flex;
     justify-content: center;
+    background: var(--primary-color);
 }
 
 .todoList {
@@ -149,12 +163,11 @@ a {
     border: 0 solid gray;
     border-radius: 1rem;
     box-shadow: 0 0 15px 0 gray;
-    background: #ffffff;
+    background: var(--backgroun-list);
 }
 
 .list {
     list-style: none;
-
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -171,9 +184,9 @@ a {
 .text {
     font-size: 1.3rem;
     margin: 1.3rem;
-    color: #777a92;
     font-weight: 700;
     width: 40rem;
+    color: var(--secondary-color);
 }
 
 .item:hover {
@@ -230,7 +243,7 @@ a {
     /*background: #fff;*/
     bottom: 0;
     font-size: 1.1rem;
-    background: white;
+    background: var(--primary-color);
 }
 
 
@@ -238,14 +251,6 @@ a {
     color: #777a92;
 }
 
-.darkMood {
-    background: #161722;
-}
-
 .dark-header {
     background-image: url("/res/img/dark.jpg");
-}
-
-.dark-main {
-    background: #393a4c;
 }

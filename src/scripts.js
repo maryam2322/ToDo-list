@@ -1,5 +1,14 @@
 // change mode in ToDoList
-
+const icon = document.getElementById("icon")
+const header = document.getElementsByClassName("header")
+icon.onclick = function (){
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains("dark-theme")){
+        icon.src = "/res/img/icon-sun.svg"
+    }else {
+        icon.src = "/res/img/icon-moon.svg"
+    }
+}
 
 // add and delete tasks in list and in localstorage
 const inputBox = document.querySelector(".inputField input")
@@ -55,6 +64,8 @@ function deleteItem(index) {
     localStorage.setItem("New ToDo", JSON.stringify(listArr));
     showTasks();
 }
+// checked and unchecked
+
 
 
 // filter the tasks
@@ -72,49 +83,3 @@ new Sortable(dragTasks, {
 
 
 
-
-
-
-
-
-
-// const dragGables = document.querySelector(".item");
-// const containers = document.querySelectorAll(".list");
-//
-// dragGables.forEach(draggable => {//وقتی درگ میشه چه استایلی داشته باشه
-//     draggable.addEventListener('dragstart', () => {
-//         draggable.classList.add('')
-//     })
-//     draggable.addEventListener('dragend', () => {
-//         draggable.classList.remove('')
-//     })
-//
-// })
-//
-// containers.forEach(list => {
-//     list.addEventListener('dragover', e => {
-//         e.preventDefault()
-//         const afterElement = getDragAfterElement(list, e.clientY);
-//         console.log(afterElement)
-//         const draggable = document.querySelector('.dragging')
-//         if (afterElement == null) {
-//             list.appendChild(draggable)
-//         } else {
-//             list.insertBefore(draggable, afterElement)
-//         }
-//     })
-// })
-//
-// function getDragAfterElement(list, y) {
-//     const draggableElements = [...list.querySelectorAll('draggable:not(.dragging)')]
-//     return draggableElements.reduce((closest, child) => {
-//         const box = child.getBoundingClientRect()
-//         const offset = y - box.top - box.height / 2;
-//         console.log(box)
-//         if (offset < 0 && offset > closest.offset) {
-//             return {offset: offset, element: child}
-//         } else {
-//             return closest
-//         }
-//     }, {offset: Number.NEGATIVE_INFINITY}).element
-// }

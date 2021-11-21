@@ -10,13 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;700&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <!--Drag and Drop-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"
-            integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.js"
-            integrity="sha512-Fc8SDJVBwajCGX0A9z8lBeRPaCjR25Ek577z9PtQLB7CLBz7Mw1XhjbcD2yDWrGszL/uezKGidtGCng6Fhz3+A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Todo App</title>
     <link rel="stylesheet" href="res/css/styles.css">
 </head>
@@ -26,13 +19,11 @@
 
     <!--header-->
     <div class="header">
+
         <div class="header__title">
             <h1>TODO</h1>
-            <button class="btn-switch" onclick="changeMood(this)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
-                    <path fill="#FFF" fill-rule="evenodd"
-                          d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"></path>
-                </svg>
+            <button class="btn-switch">
+                <img id="icon" src="/res/img/icon-moon.svg" alt="">
             </button>
         </div>
         <form class="form">
