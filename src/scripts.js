@@ -1,16 +1,17 @@
 // change mode in ToDoList
 const icon = document.getElementById("icon")
 const header = document.getElementById("header-img")
-icon.onclick = function (){
+
+icon.onclick = function () {
     document.body.classList.toggle("dark-theme")
-    if (document.body.classList.contains("dark-theme")){
+    if (document.body.classList.contains("dark-theme")) {
         icon.src = "/res/img/icon-sun.svg"
-    }else {
+    } else {
         icon.src = "/res/img/icon-moon.svg"
     }
-    if (document.body.classList.contains("dark-theme")){
+    if (document.body.classList.contains("dark-theme")) {
         header.style.backgroundImage = "url('/res/img/dark.jpg')"
-    }else {
+    } else {
         header.style.backgroundImage = "url('/res/img/light.jpg')"
     }
 }
@@ -46,8 +47,8 @@ function showTasks() {
 
     let newLiTag = ''
     listArr.forEach((element, index) => {
-        newLiTag += `<li class="item draggable" draggable="true">
-                    <button type="submit" class="list__item--unchecked"></button>
+        newLiTag += `<li class="item">
+                    <button type="submit" class="list__item--unchecked" id="check" onclick="checkItem()"></button>
                     <span class="text">${element}</span>
                     <button class="list__item--delete" onclick="deleteItem(${index})";>
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
@@ -69,9 +70,12 @@ function deleteItem(index) {
     localStorage.setItem("New ToDo", JSON.stringify(listArr));
     showTasks();
 }
+
 // checked and unchecked
-
-
+const check = document.getElementById("check")
+check.addEventListener('click', () =>{
+    check.classList.add('check')
+})
 
 // filter the tasks
 

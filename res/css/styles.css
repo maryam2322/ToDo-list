@@ -24,7 +24,7 @@ a {
     --primary-color: #161722;
     --secondary-color: #cacde8;
     --backgroun-list: #393a4c;
-    --filter-color: #4d5066;
+    --filter-color: #161722;
 }
 
 
@@ -185,7 +185,7 @@ a {
     font-size: 1.3rem;
     margin: 1.3rem;
     font-weight: 700;
-    width: 40rem;
+    width: 80%;
     color: var(--secondary-color);
 }
 
@@ -200,7 +200,6 @@ a {
     width: 2rem;
     height: 2rem;
     margin-top: 1rem;
-    /*margin-left: 70%;*/
 }
 
 .list__item--unchecked {
@@ -240,7 +239,6 @@ a {
     height: 4rem;
     position: fixed;
     box-shadow: 0 0 10px 0 gray;
-    /*background: #fff;*/
     bottom: 0;
     font-size: 1.1rem;
     background: var(--primary-color);
@@ -254,3 +252,119 @@ a {
 .dark-header {
     background-image: url("/res/img/dark.jpg");
 }
+
+
+.check {
+    background-image: url(/res/img/icon-check.a8fb15d0.svg), linear-gradient(135deg, #57ddff, #c058f3);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 18rem;
+    }
+
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .inputField {
+        width: 50%;
+        height: 4rem;
+    }
+
+    .form__input--uncheck {
+        margin: 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .form__input--check {
+        margin: 1.2rem;
+
+    }
+    .form__input--create {
+        font-size: 1.1rem;
+    }
+    .filter__option{
+        font-size: 0.8rem;
+    }
+    .filter span {
+        font-size: 0.8rem;
+    }
+    .filter__option:last-child {
+        padding-left: 0;
+    }
+    .fil{
+        margin-left: 2rem;
+    }
+    .todoList{
+        width: 60%;
+    }
+    .text{
+        font-size: 1rem;
+        width: 18rem;
+    }
+
+    .subFooter{
+        font-size: 1rem;
+    }
+    .mainFooter{
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        height: 15rem;
+    }
+
+    .header__title {
+        font-size: 0.8rem;
+    }
+
+    .inputField {
+        width: 70%;
+    }
+
+    .form__input--uncheck {
+        margin: 1.2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+
+    .form__input--create {
+        width: 60%;
+    }
+    .filter__option{
+        font-size: 0.6rem;
+    }
+    .filter span {
+        font-size: 0.6rem;
+    }
+    .filter__option:last-child {
+        padding-left: 0;
+    }
+    .fil{
+        margin-left: 0.6rem;
+    }
+    .todoList{
+        width: 90%;
+    }
+    .text{
+        font-size: 0.8rem;
+        width: 50%;
+    }
+
+    .subFooter{
+        font-size: 0.9rem;
+    }
+    .mainFooter{
+        font-size: 0.6rem;
+        height: 2rem;
+    }
+}
+
